@@ -27,10 +27,10 @@ import javax.servlet.http.HttpServletResponse;
 
 	    	
 	        // リクエストパラメータを取得
-	        String message = request.getParameter("message");
+	        String text = request.getParameter("message");
 
 	        // リクエストスコープに保存
-	        request.setAttribute("message", message);
+	        request.setAttribute("message", text);
 
 	    	
 	    // フォワード

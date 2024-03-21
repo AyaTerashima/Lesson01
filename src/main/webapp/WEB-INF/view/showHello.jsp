@@ -1,7 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%
-String name = request.getParameter("message");
-%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,10 +8,10 @@ String name = request.getParameter("message");
 </head>
 <body>
 <p>
-結果です<br>
-
-<%= request.getAttribute("message") %>
-
+	結果です<br>
 </p>
+
+<span>${message}</span>
+
 </body>
 </html>
